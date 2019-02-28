@@ -1,3 +1,5 @@
+AngularJS and Google-Maps Application
+
 Hi!
 
 This is a draft of Client – side webApp (that built on Mock Data) implementing UI with angularJS, and Google-Maps API. 
