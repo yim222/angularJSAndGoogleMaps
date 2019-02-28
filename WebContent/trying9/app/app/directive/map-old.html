@@ -1,0 +1,52 @@
+<div>
+
+</div><input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div id = "mainMap"></div>
+<!--<h1> I am from directive?</h1>
+	<h2 ng-click = "overview()">overView</h2><p style ="background-color:yellow" id = "addMarker"
+	ng-click = "func1();toggleAddingNewMarker();">{{msg}}</p>
+	<p id = "ccc" ng-click = "addMarker(true)">save</p><p ng-click = "addMarker(false)">cancel</p>
+	<p ng-click = "getTheCoordinates()">getcoord</p>
+	<p  ng-click = "getTheCoordinates()">getcoord</p>
+	<p id = "cdcc" ng-click = "getTheCoordinates()">getcoord2</p>-->
+	
+	
+	<div id = "overviewButton" ng-click = "overview()"></div>
+	<div id = "addMarkerButton" ng-click = "triggerAddNewMarker()"></div>
+	<div id = "addNewMarkerMessage" class = "sysMessage" ng-show = "sysMessage2 == true"><h2>Add new Marker - please choose a point to add the marker</h2></div>
+	<div class = "sysMessage" id = "addMarkFormEl" ng-show = "addMarkForm == true" >Here will go a form ...</div> 
+	<div id ="displayForm1" ng-show = "displayForm1 == true" class = "sysMessage">
+		<h3>Manually added Marker </h3>
+		<form ng-submit="addMarker(true)">  
+	<!--  	<form >-->		
+		Title:<br>
+		<input type = "text" ng-model = "newMarkerDetails.title"><br>
+		Description:<br>
+		<textarea rows="2" cols="50" ng-model = "newMarkerDetails.description"></textarea><br>
+		Todo - choose from cases targets, & Associated targets<br>
+		Note:<br>
+		<textarea rows="2" cols="50"  ng-model = "newMarkerDetails.note">
+		</textarea>
+		<br>
+     <div ng-repeat="data in array">
+ <img class="target-img" ng-src="{{data.img}}"></img>       
+      <span  class="tr-name">{{data.text}}</span>  
+    </div>  
+		<input type = "submit" value = "Save Marker"> 
+		<br>
+		<button ng-click = "cancelAddMarker();">Cancel</button>
+		<!--  <button ng-click="addMarker(true)">save</button>-->
+		
+		</form>
+		
+	</div>
+</div>
+<test></test>
+<!-- old 
+<div>
+ <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+  <h2  id="ov" ng-click = "overview()">overView</h2>
+<div id = "mainMap">
+   
+</div>
+</div>-->

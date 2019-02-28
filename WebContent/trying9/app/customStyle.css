@@ -1,0 +1,89 @@
+
+/*Disable the default images of zoom buttons*/
+.gmnoprint img { display: none; }
+#map .gm-style > .gmnoprint > .gmnoprint > div > img { display: none !important;}
+
+
+/*zoom-in button */ 
+#mainMap .gm-style > .gmnoprint > .gmnoprint div[title="Zoom in"] {
+	
+	
+	background-image: url("images/map/ic_map_zoomin.png");
+	background-color:#244b6f;
+	
+	background-size: 60%60%;
+	background-position: center; 
+	background-repeat:no-repeat;
+	/*radius... */
+	border-radius: 3px 3px 0px 0px;
+	
+	
+	}
+/*zoom-out button */ 
+#mainMap .gm-style > .gmnoprint > .gmnoprint div[title="Zoom out"] { 
+	
+	
+	background-image: url("images/map/ic_map_zoomout.png");
+	background-color:#244b6f;
+	
+	background-size: 60%60%;
+	background-position: center; 
+	background-repeat:no-repeat;
+	/*radius... */
+	border-radius: 0px 0px 3px 3px ;
+	
+}
+
+/* Todo - the area around the buttons need to be accessed for background color*/
+        
+        /*serach box setting */
+ #pac-input{
+ 	background-color:#244b6f;
+	border-radius: 3px; 
+	height: 30px;
+	borders: none;
+	color: white;
+ 
+ }
+ 
+ 
+ .zoomButton{
+ 	background-color:#244b6f;
+	
+	background-size: 60%60%;
+	background-position: center; 
+	background-repeat:no-repeat;
+	margin: 10px;
+	height:25px;
+	width: 25px;
+ 
+ }
+ 
+ #zoomIn{
+ 	background-image: url("images/map/ic_map_zoomin.png");
+	background-color:#244b6f;
+	
+	background-size: 60%60%;
+	background-position: center; 
+	background-repeat:no-repeat;
+	/*radius... */
+	border-radius: 3px 3px 0px 0px;
+	margin-bottom:0px;
+	margin-top:2px;
+	
+ }
+ 
+ #zoomOut{
+ 
+	background-image: url("images/map/ic_map_zoomout.png");
+	background-color:#244b6f;
+	
+	background-size: 60%60%;
+	background-position: center; 
+	background-repeat:no-repeat;
+	margin-top:0px;
+	/*radius... */
+	border-radius: 0px 0px 3px 3px ;
+	
+ 
+ }

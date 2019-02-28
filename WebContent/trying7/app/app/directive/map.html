@@ -1,0 +1,63 @@
+<div>
+
+</div><input id="pac-input"  type="text" placeholder="Search Box">
+<div id = "mainMap"></div><h1> I am from directive?</h1>
+	<h2 ng-click = "overview()">overView</h2>
+	<p id = "ccc" ng-click = "addMarker(true)">save</p><p ng-click = "addMarker(false)">cancel</p>
+	<p ng-click = "getTheCoordinates()">getcoord</p>
+	<p  ng-click = "getTheCoordinates()">getcoord</p>
+	<p id = "cdcc" ng-click = "getTheCoordinates()">getcoord2</p>
+	
+	
+	<div id = "overviewButton" class = "mapButton" ng-click = "overview()"></div>
+	<div id = "addMarkerButton"  class = "mapButton" ng-click = "triggerAddNewMarker()"></div>
+	<div id = "addNewMarkerMessage" class = "sysMessage" ng-show = "sysMessage2 == true"><h2>Add new Marker - please choose a point to add the marker</h2></div>
+	<div class = "sysMessage" id = "addMarkFormEl" ng-show = "addMarkForm == true" >Here will go a form ...</div> 
+	<div id ="displayForm1" ng-show = "displayForm1 == true" class = "sysMessage">
+		<h3>Manually added Marker </h3>
+		<form ng-submit="addMarker(true)">  
+	<!--  	<form >-->
+		
+		Title:<br>
+		<input type = "text" ng-model = "newMarkerDetails.title"><br>
+		Description:<br>
+		<textarea rows="2" cols="50" ng-model = "newMarkerDetails.description"></textarea><br>
+		Todo - choose from cases targets, & Associated targets<br>
+		<div ng-include = "'app/directive/casesTargetView1.html'" 
+		></div>
+		 <div ng-include = "'app/directive/associatedTargetsView1.html'"></div>
+		Note:<br>
+		<textarea rows="2" cols="50"  ng-model = "newMarkerDetails.note">
+		</textarea>
+		<br>
+		
+		<input type = "submit" value = "Save Marker"> 
+		<br>
+		<button ng-click = "cancelAddMarker();">Cancel</button>
+		<!--  <button ng-click="addMarker(true)">save</button>-->
+		
+		</form>
+		
+	</div>
+	 <div ng-include = "'app/directive/appTargetView1.html'"></div>
+	 
+	 <h1 id="exampleid">block</h1>
+	 <div ng-include = "'app/directive/associatedChoosen.html'"></div>
+	 <h1>Directive:</h1>  <testing123></testing123>
+	 
+	  <ma-associatedsTargets></ma-associatedsTargets>
+	 <button ng-click ="func102();">TESTING-102</button>
+	 <button ng-click ="func4()">TESTING2</button>
+	 <p ng-click = 'func1()'>ng-click</p>
+	
+	 
+</div>
+
+<!-- old 
+<div>
+ <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+  <h2  id="ov" ng-click = "overview()">overView</h2>
+<div id = "mainMap">
+   
+</div>
+</div>-->

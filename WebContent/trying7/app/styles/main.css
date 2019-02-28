@@ -1,0 +1,467 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+/*-----------------
+map style
+
+----------------------------*/
+
+
+	
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+.nopading{
+    padding: 0px;
+
+}
+
+.logo{
+    background: #307df2;
+    height: 70px;
+    }
+.logo-img{
+      margin-top: 6%;
+    margin-left: 8%;
+}
+
+.tr-titel{
+  background: #2c3641;
+    height: 42px;
+}
+.tr-titel span{
+    color: white;
+    margin-left: 2%;
+    line-height: 3;
+}
+.titel-img{
+    float: right;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+.btn_img{
+    background: #307df2;
+    width: 23px;
+    padding: 3px;
+    height: 23px;
+
+}
+.controll-warper{
+background-color: #252d37;
+
+}
+.case-select{
+      width: 70%;
+    font-size: 1.1em;
+    color: white;
+    background-color: #4D89C1;
+    vertical-align: super;
+    display: inline-block;
+    margin-left: 1.5%;
+}
+.case-select a{
+     font-size: 1.1em;
+    color: white;
+     margin-left: 21%;
+}
+.case-select ul{
+    width: 100%;
+    color: white;
+    background-color: #2f567b;
+}
+.case-select ul li:hover{
+background-color: #3b6993;
+}
+input[type=checkbox] {
+    display:none;
+}
+.isActive{
+ background:url("images/targets-icon/ic_check.png") no-repeat;
+    height: 10px;
+    width: 10px;;
+    background-size: 100%;
+    float: right;
+    margin-right: 2%;
+}
+
+.addvBtn{
+width: 10px;
+    height: 10px;
+    margin-right: 2%;
+    float: right
+}
+.caseBtn{
+      width: 23%;
+    display: inline-block;
+    margin-left: 3%;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+.x-select
+{    color: white;
+    vertical-align: super;
+    /*background: #307df2;*/
+    padding: 1.4%;
+    float: right;
+}
+.pluse.x-select{
+     padding: 1%;
+}
+.contorl-btn{
+    padding-top: 2%;
+}
+.serchbox{
+  padding-top: 2%;
+    padding-bottom: 2%;
+}
+.serch-input{
+  width: 90%;
+    background-color: #252d37;
+    border-color: #686868;
+    margin-left: 5%;
+}
+
+
+/*---------------------------
+target list 
+
+------------------------------*/
+.target-list{
+  background: #354658;
+  height: 479px;
+  overflow: hidden;
+}
+.target-deitels{
+ 
+   border-bottom: 1px solid #303F50;
+}
+.target-img{
+      width: 9%;
+    border-radius: 50%;
+    margin-left: 4.4%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    display: inline-block;
+    margin-right: 4%;
+}
+.target-text{
+ display: inline-block;
+    width: 71%;
+    margin-top: 6.5%; 
+}
+.tr-name{
+     display: inline-block;
+    color: white;
+    width: 73%;
+}
+.tr-last-text{
+      color: #9DB3CB;
+}
+
+
+
+/*-----------------------
+model  add .case
+
+-------------------------*/
+.achade
+{
+    background: #242F3A;
+}
+.achade span{
+      color: white;
+      font-size: 16px;
+}
+.closemodel{
+float: right;   
+}
+.acbody{
+ background: #2D3945; 
+}
+.objName
+{
+    background: #242F3A;
+    width: 90%;
+    margin-left: 2%;
+    border: 0px;
+    margin-bottom: 1%;
+    vertical-align: text-top;
+    padding-bottom: 0.5%;
+    color: white;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+    background:#252D37 ;
+    border-bottom: 1px solid #252D37;
+  }
+  .navbar{
+  background: #307DF2;
+  border: 0; 
+  border-left: 1px solid #e7e7e7;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*-----------------------
+slider
+------------------------*/
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+.caseName
+{
+color: white;
+    font-size: 14px;
+}
+
+
+
+
+/* **************************** Izhar  ******* */
+
+#displayForm1{
+	
+		height:400px;
+		margin-top:20px;
+		overflow:scroll;
+		
+	}
+#mainMap{
+
+  height:561px;
+  width: 100%;
+}
+	#overviewButton{
+	/*
+	z-index: 40;
+	
+	
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	
+	*/
+	margin: 10px;
+	height:25px;
+	width: 25px;
+	background-image: url("images/map/overviewButton.png");/*background-color:yellow;*/
+	/*background-size: 100%100%;*/
+	
+
+	}
+	#addMarkerButton{
+	/*
+	z-index: 40;
+	
+	
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	
+	*/
+	margin: 10px;
+	height:25px;
+	width: 25px;
+	background-image: url("images/map/addMarkerButton.png");/*background-color:yellow;*/
+	
+	
+
+	}
+	
+	
+
+	.sysMessage{
+	
+		/*z-index:5;
+		
+		/*
+		position: absolute;
+		top: 40%;
+		right: 40%;
+		
+		*/
+		color: white;
+		padding:20px;
+		margin-left:20%;
+		background-color:  #2a3440;
+		
+	
+	}
+	.sysMessage textarea, input, button/* [type=text] input [type=submit]*/{
+	color: black; 
+	}
+	
+	/*trying*/
+	
+    
+    
+    div.mapButton{
+	background-color:#244b6f;
+	
+	background-size: 60%60%;
+	background-position: center; 
+	background-repeat:no-repeat;
+	border-radius: 3px;
+}
+
+
+/**Style of the zoom buttons  - seecustom style**/

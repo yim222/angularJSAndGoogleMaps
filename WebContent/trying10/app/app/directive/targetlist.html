@@ -1,0 +1,17 @@
+<div ng-controller="targetListCtrl as trlist">
+    <div>
+        <span class="caseName"> {{obj.Name}}</span>
+        <input type="image" class="btn_img" src="images/targets-icon/ic_cases.png" id="addCase" ng-click='editCase()' />
+        <input type="image" class="btn_img" src="images/targets-icon/ic_addtarget.png" id="addtarget" ng-click="showCase()" />
+        <input type="image" class="btn_img" src="images/targets-icon/ic_hideall.png" id="hideMarker" ng-click="print()"  />
+    </div>
+    <div ng-show="addinput">
+        <input type="text"  placeholder="Enter a letter to filter"  ng-model="search"/>
+            <input type="button" class="btn_img btn btn-success"   ng-click="addlist()"  />
+    </div>
+    <div class="trg" ng-repeat="ta in tl"  ng-show="toglle">
+        <img class="target-img" ng-src="{{ta.imageUrl}}"></img>
+        <span class="tr-name">{{ta.name}}</span>
+         <input type="checkbox" ng-model="addlist.targetId[ta.targetId]"  ng-true-value="{{ta.targetId}}" ng-false-value="{{null}}"/> 
+    </div>
+</div>

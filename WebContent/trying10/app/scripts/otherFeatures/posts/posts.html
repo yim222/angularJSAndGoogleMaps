@@ -1,0 +1,132 @@
+<div class = "dashboardStyle">
+	<div class = "posts" >
+		<!-- Main Area!!!-------------------------------------------------- -->
+		<!-- area of the posts page -->
+		<div id = "postsPage" ng-if = 'pageType === "posts"' style = "min-height: 800px;">	
+			<table style = "width:100%">
+			<thead>
+				<tr>
+				<th style = "width:5%">
+				<th style = "width:40%">Content
+				<th style = "width:10%">Date
+				<th style = "width:15%" >Media
+				<th style = "width:15%" >Source URL
+				<th style = "width:10%">Location
+				<th style = "width:5%"></th>
+				
+				</tr>
+				
+			
+			</thead>
+			
+			<tbody>
+			<div  id="{{ 'post' +  post.post_id }}" class = "postRow">
+			<tr ng-repeat = "post in data" class = " littleBlue fSize16 regular dataBox postRow" >
+			
+				<td><img ng-src = "images/dashboard/ic_post.png" style = "padding: 25%;">
+				<td >
+				
+				<div 
+				ng-model = 'hideText'  ng-init= '
+				
+				
+				hideText = "true";
+				isShort = isShortText(post.post_text, 150);
+				isOpen = "true";
+				
+				
+				
+				'
+				ng-class="hideText ? 'cell1' : 'cell2'"
+				class = "littleBlue fSize16 regular"
+				
+				
+				>
+				<div id = "moreMessage1" ng-class = 'isShort   ? "hidden" : "visible"' ng-click = "hideText = !hideText;">
+				<span >  ..."</span> 
+				<img height = "10" width = "10" alt="image" ng-src = 'images/dashboard/ic_target_more.png'></div>
+				<span>
+				
+				
+				{{post.post_text}}
+				
+				<img ng-class = 'isShort   ? "hidden" : "visible"' height = "10" width = "10" 
+				alt="image" ng-src = 'images/dashboard/ic_target_less.png' ng-click = "hideText = 'true'">
+				</div>
+				<td>{{post.post_date}}
+				<td><div style = "padding : 5px; " class = "imagesCell"><span ng-repeat = "image in post.post_image" class = "">
+					<img height = "40" width = "40" ng-src = '{{image.img_url}}' style = "padding : 5px; "   
+					>
+					 
+					</span></div >
+				<td>{{post.post_url}}
+				<td><img ng-src = "images/dashboard/ic_location.png" style = "padding: 25%;">
+				<td><img ng-src = "images/dashboard/ic_note.png" style = "padding: 25%;">
+				
+				</td>
+			
+				
+			
+			</tr>
+		</div>
+			</tbody>
+		
+		</table>
+	</div>
+	
+		<!-- end of Main Area!!!-------------------------------------------------- -->
+	
+		<!-- Draft Area!------------------------------------------------------------------------------- -->
+		
+	
+		<!-- Draft Area!------------------------------------------------------------------------------- -->
+
+	</div>
+	<div id = "mainDashboardArea" ng-if ='pageType === "mainDashboard"' style ="display:inline;">
+	
+		
+		<div class = "postsList"> 
+		<p class = "title2 white fSize18" style = "">Posts</p>
+		<input class = "littleBlue fSize14" placeholder = "Enter Keywords">
+		<div class = "postBox littleBlue fSize16 regular" ng-repeat = "post in data">
+		
+			<div class = "postIcon"><img ng-src = "images/dashboard/ic_post.png" style = ""></div>
+			<div class = "postText">
+				<div 
+					ng-model = 'hideText'  ng-init= '
+					
+					
+					hideText = "true";
+					isShort = isShortText(post.post_text, 150);
+					isOpen = "true";
+					
+					
+					
+					'
+					ng-class="hideText ? 'cell1' : 'cell2'"
+					class = "littleBlue fSize16 regular "
+					
+					
+					>
+					<div id = "moreMessage1" ng-class = 'isShort   ? "hidden" : "visible"' ng-click = "hideText = !hideText;">
+					<span >  ..."</span> 
+					<img height = "10" width = "10" alt="image" ng-src = 'images/dashboard/ic_target_more.png'></div>
+					<span>
+					
+					
+					{{post.post_text}}
+					
+					<img ng-class = 'isShort   ? "hidden" : "visible"' height = "10" width = "10" 
+					alt="image" ng-src = 'images/dashboard/ic_target_less.png' ng-click = "hideText = 'true'">
+					<br>
+					</div>
+					</div>
+			<div class = "postDate">
+			{{post.post_date}}
+			<img ng-src = "images/dashboard/ic_location.png" style = "float: right;">
+			</div>
+		</div>
+		
+	</div>
+	</div>
+</div>

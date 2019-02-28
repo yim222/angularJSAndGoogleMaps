@@ -1,0 +1,15 @@
+<div  class="">
+
+<p>Choose the target you want to add the new Marker:</p>
+   
+        <div  ng-repeat=" tr in casesTargets" ng-click = "setChoosenTargetId(tr.targetId);" 
+        ng-style="tr.targetId == choosenTargetId  && {'background-color':'green'}" >
+            <img class="" ng-src="{{tr.imgUrl}}" width = "20" height = "20"></img>
+            <div class="">
+            <span  class="">{{tr.name}}</span>
+           
+            </div>
+              <input type="image" class="" src="images/targets-icon/ic_show.png" id="showtarge">
+              </div>
+        
+    </div>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Target Details Trying</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+  
+	
+
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJhXZ5oDgRkM__42tEjGp9uc8nWM8TMuY&libraries=places"></script>
+  <!-- import the clustering library -->
+  <!-- 
+	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    -->
+    <script src = "MarkerCluster.js" type="text/javascript"></script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+   
+	
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+   <script src="scripts/app.js"></script>
+   
+   <script src="scripts/otherFeatures/targetDetails/targetDetails.module.js"></script>
+   
+   <!-- mock services dev -->
+    <script src="scripts/services/test-object/objects.js"></script>
+     <script src="scripts/services/data-mock.js"></script>
+     <script src="scripts/controllers/testingObjects.js"></script>
+     
+<!-- serivces-->
+   <script src="scripts/services/common.services.js"></script>
+   <!-- data serivces-->
+    <script src="scripts/services/data/dataResource.js"></script>
+        <script src="scripts/services/data/setdate-service.js"></script>
+   <!-- model services-->
+ <script src="scripts/services/model/dialog-model.js"></script>
+ 
+ <!-- map services -->
+  <script src="scripts/services/map/addNewMarker.js"></script>
+  <script src="scripts/services/map/positioningMapEls.js"></script>
+  <script src="scripts/services/map/infowindowsTemplatesService.js"></script>
+  <script src="scripts/services/map/TargetsUtilsService.js"></script>
+  <script src="scripts/services/map/mapService.js"></script>
+<!--  contorller --> 
+  <script src="scripts/controllers/targetCtrl.js"></script>
+  <script src="scripts/controllers/ConfirmModalCtrl.js"></script>
+  <script src="scripts/controllers/mapCtrlTrying1.js"></script>
+  <script src="scripts/controllers/targetListCtrl.js"></script>
+  <!-- templet map-->
+  <script src="scripts/controllers/infowindowsTemplates.js"></script>
+  
+  <!-- TargetDetailFeature. the module is ablove -->
+  <script src="scripts/otherFeatures/targetDetails/targetDetailsDirective.js"></script>
+  	<script src="scripts/otherFeatures/targetDetails/targetDetailsController.js"></script>
+  	<script src="scripts/otherFeatures/targetDetails/targetDetailsService.js"></script>
+  	<script src="scripts/otherFeatures/targetDetails/targetDetailsObj.js"></script>
+   	
+  
+   <!-- endangular -->
+    <!-- endbuild -->
+    
+    <!-- Custom style -->
+  
+    <link rel="stylesheet" href="customStyleDashboard.css" /> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> 
+    
+  </head>
+  <body >
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    
+	<h1>Commond Css Documentation: (Izhar)</h1>
+   
+   <p>This is the classes of the common css (with their view) u can use it where u want.</p>
+   
+   <h2>Dashboard style</h2>
+   
+   <p>The recommended way is to define classes by the demand, color (white/little blue), fSize##(availbe <br>
+   12-19), weight (regular, bold, semibold, medium).<br>
+   At first I tried to define to every specific type a font, but the other way is more comforable</p>
+  
+   
+   
+   dashboardStyle : 
+   <div class = "dashboardStyle">a
+   <table style = "border : solid 1px;" id = "documentation">
+	   <tr>
+	  	 <th>Class Name<th>The details<th>The look
+	   </tr>
+	    <tr>
+	  	 <td>font example 1: the classes is : <td>white fSize18 semibold
+	  	 <td><span class = "white fSize18 semibold">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font example 2: the classes is :<td>littleBlue fSize12 medium
+	  	 <td><span class = "littleBlue fSize12 medium">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font example 3:<td>littleBlue fSize14 regular
+	  	 <td><span class = "littleBlue fSize14 regular">The look</span>
+	   </tr>
+	    <tr>
+	  	
+	    <tr>
+	  	 <td>font1<td>fira sans, 18px, bold, #ffffff<td><span class = "font1">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font2<td>fira sans regular 14px #b9cbdf<td><span class = "font2">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font3<td>fira sans regular 16px #b9cbdf<td><span class = "font3">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font4<td>16, #ffffff , semi-bold<td><span class = "font4">The look</span>
+	   </tr>
+   		 <tr>
+	  	 <td>font5<td>16, #ffffff ,medium<td><span class = "font5">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font6<td>firasans 16, #ffffff ,regular<td><span class = "font6">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font7<td>14, #ffffff , semi-bold<td><span class = "font7">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font8<td>16, #ffffff ,medium<td><span class = "font8">The look</span>
+	   </tr>
+	    <tr>
+	  	 <td>font5<td>16, #ffffff ,medium<td><span class = "font5">The look</span>
+	   </tr>
+	   
+	   
+	   
+	   
+	   
+	   
+	    <tr>
+	  	 <td>background1<td>#191f25<td class = "background1"><span >The background</span>
+	   </tr>
+   		<tr>
+	  	 <td>line1<td>1px , stroke, #334353<td><svg width="120" height="100" viewBox="0 0 120 120"
+    xmlns="http://www.w3.org/2000/svg">
+  <line class = "line1" x1="10" y1="10" x2="150" y2="10"
+      stroke-width="1px" stroke="#334353" />
+</svg>
+	   </tr>
+	   
+	   <tr>
+	  	 <td>frame1<td>simple frame<td ><span class = "frame1">I am frame</span>
+	   </tr>
+   
+   </table>
+   
+   
+   
+   
+   </div>
+   
+   
+        <!-- endbuild -->
+</body>
+</html>

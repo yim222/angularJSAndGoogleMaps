@@ -1,0 +1,35 @@
+<div class = "mainDashboard">
+<div style = "background-color: green;">
+<p>main Dashboard area</p>
+  <p ng-if = "x2 === 'showMe'" style = "padding-bottom: 50px;">I shown just if x2 = "showMe"</p>   
+
+</div>
+		<div id = "vlaArea" style = "">
+		<p class = "white fSize16 " id= "title1">VLA</p>
+			<div ng-app = "vla.module" ng-controller="VlaController"  >
+				      
+				       
+				       	<vla-directive ng-init = 'pageType = "mainDashboard"'></vla-directive>
+		      </div>
+    	</div>
+    	
+    	
+    	
+ 
+ 	<div ng-app = "posts.module" ng-controller="PostsController">
+       	
+       
+       	<posts-directive ng-init = 'pageType = "mainDashboard"'></posts-directive>
+    </div>
+     <!-- 
+		        <div ng-app = "keywords.module" ng-controller="KeywordsController">
+		       
+		       
+		       	<keywords-directive></keywords-directive>
+		       </div>
+		       
+		       -->
+		  
+     
+		       
+</div>

@@ -1,0 +1,195 @@
+<div class = "dashboardStyle targetDetails">
+	<div id = "title1" class = "onlyVlaEl semibold fSize16 white" >Target Details</div>
+	<div class = "upperSection">
+	
+		<table>
+			<td style = "width:40%;"><img id = "targetDetailsImg"  class = "otherFeaturesText1" src = "{{data.imgUrl}}"></img>
+			
+				<div class ="targetDetailsBlock">
+					<span class = "white fSize18 bold">{{data.name}}</span></br>
+					<span class = "littleBlue fSize16 regular">Attended "{{data.lastPost.text}}" Event</span></br>
+					<span class = "littleBlue fSize14 regular">Today at {{data.lastPost.time}}</span></br>
+				</div>
+			
+			<td style = "width:30%;"><span class = "white fSize16 semibold">Linked to Cases</span><br>
+				<span class = "littleBlue fSize14 regular frame1" ng-repeat = "case in data.cases">{{case.caseName}}
+				 </span>
+			
+			
+			 <td style = "width:30%;">
+					<div class ="targetDetailsBlock">
+						<span class = "white fSize16 semibold">Profile URL </span><br>
+						<span class = "littleBlue fSize16 regular">{{data.profileUrl}}</span>
+					</div>
+		</table>
+	
+	</div>
+	<svg class = "line1" height="2" width="1200">
+	  <line  x1="0" y1="0" x2="1200" y2="0" stroke-linecap="butt"/>
+	</svg> 
+	 
+	
+	<div class = "middleSection">
+	<br>
+	
+		<table>
+		<th>
+			<span  class= "onlyMain white fSize18 semibold ">Target's Information </span>
+			<span class= " onlyVlaEl white fSize18 semibold ">Target's Addresses </span>
+			</th>
+			<th><span ng-if ="isVla" class= " onlyVlaEl white fSize18 semibold">BIO </span></th><th></th>
+			<tr>
+				<td style = "width:40%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Address</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.address}}</span>
+					</div>
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Other Cities lived</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.otherCitiesLived}}</span>
+					</div>
+				
+				
+				<td style = "width:30%">
+						
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Website</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.website}}</span>
+					</div>
+		
+				
+					
+				</td>
+			</tr>
+			<tr>
+				<td style = "width:40%">
+					<div class ="targetDetailsBlock vlaEl" ng-class = "vlaEl">
+						<span class = "white fSize16 medium">Hometown</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.hometown}}</span>
+					</div>
+					
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Relationship status</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.relationShipStatus}}</span>
+					</div>
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Language</span><br>
+						<span class = "littleBlue fSize16 regular" ng-repeat = "language in data.languages">{{language}} 
+						
+						<span ng-if = "!$last">, </span>
+						</span>
+						
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style = "width:40%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">High School</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.highSchool}}</span>
+					</div>
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Other names</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.otherName}}</span>
+					</div>
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock vlaEl">
+						<span class = "white fSize16 medium">Mobile Phone</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.mobilePhone}}</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style = "width:40%">
+					<div class ="targetDetailsBlock">
+						<span class = "white fSize16 medium">University</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.university}}</span>
+					</div>
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock ">
+						<span class = "white fSize16 medium">Email Address</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.emailAddress}}</span>
+					</div>
+							
+				<td style = "width:30%">
+				</td>
+			</tr>
+			<tr>
+				<td style = "width:40%">
+					<div class ="targetDetailsBlock">
+						<span class = "white fSize16 medium">Current City</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.currentCity}}</span>
+					</div> 
+				
+				<td style = "width:30%">
+					<div class ="targetDetailsBlock">
+						<span class = "white fSize16 medium">Birthdate</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.birthdate}}</span>
+					</div>
+				
+				<td style = "width:30%">
+				</td>
+			</tr>
+			<tr>
+				<td style = "width:40%">
+					<div class ="targetDetailsBlock">
+						<span class = "white fSize16 medium">Work Place</span><br>
+						<span class = "littleBlue fSize16 regular">{{data.workPlace}}</span>
+					</div>
+				
+				<td style = "width:30%">
+				
+				
+				<td style = "width:30%">
+				</td>
+			</tr>
+		
+		</table>
+	
+	
+	
+	
+	</div>
+	
+	<svg  class = "line1  onlyMain" height="2" width="1200">
+	  <line  x1="0" y1="0" x2="1200" y2="0" stroke-linecap="butt"/>
+	</svg> 
+	 
+	<div class = "lowerSection">
+	
+		
+		<textarea class ="littleBlue background1 note" ng-model="data.note" 
+		rows="5" cols = "50" maxlength="200">
+		</textarea>
+		<svg height="2" width="1200" class = "line1">
+	  <line  x1="0" y1="0" x2="1200" y2="0" stroke-linecap="butt" />
+	</svg> 
+	 
+	
+	<span ><button class = "white button1 fSize12">Save Changes</button></span>
+	</div>
+	</div>
+	
+	<!-- END of the clean code -->
+	
+	 
+	
+	
+	
+	
+	
+
+
+
+
+

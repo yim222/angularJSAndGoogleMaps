@@ -1,0 +1,35 @@
+<div class = "vla">
+
+	
+	
+	
+	
+		<svg ng-if = "pageType === 'vla'"  height = "700" width = "1500">
+			<g compile ="vlaScheme" ></g>
+		</svg>
+		
+		
+		
+		
+		<svg id = "vlaSvgArea" ng-if = "pageType === 'mainDashboard'"  height = "460" width = "900"  >
+			<g compile ="vlaScheme" transform = "scale(0.75)" ></g>
+			
+		</svg>
+
+		
+		
+		
+		
+	 <div ng-app = "targetDetails.module" ng-controller="TargetDetailsController"
+	 ng-if = "pageType === 'vla'" >
+       	
+       
+       		<target-details-directive></target-details-directive>
+      </div>
+		
+		
+		
+		
+	
+ 
+</div>

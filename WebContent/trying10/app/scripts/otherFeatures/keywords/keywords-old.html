@@ -1,0 +1,91 @@
+<div class = "dashboardStyle keywords">
+
+<!------------------MAIN AREA-------------------------------- -->
+	
+<h2>{{testDirective}} </h2>
+	
+	<div class = "medium white keywordsSection">
+	
+		<span ng-repeat = "item in data" class = "keywordBox level{{item.importanceLevel}}">
+			<span class = "keyword" >{{item.keyword}}</span>
+		
+		</span>
+		
+	</div>
+	
+	
+	
+	<div  class = "white semibold fSize16 lowerSection">
+	Keyword Density
+	</div>
+	
+	<div class = "keywordsDetailsContainer">
+	<div class = "keywordsDetails white bold fSize16">
+		<div class = "col1">Keyword</div> <div class = "col2">Counts</div>
+			  <div class = "col3">Most Recent mentioned</div>
+			  <div class = "col4">Description</div>
+		
+	
+	</div>
+		<div ng-repeat = "item in data" class = " littleBlue regular fSize13 keywordsDetails">
+		
+			<div class = "col1">{{item.keyword}}</div> <div class = "col2">{{item.counts}}</div>
+			 <!-- console.log($scope.utcDate.toLocaleTimeString([], {hour: 'numeric', minute:'numeric', hour12: false}));// -->
+			 <!--  <span>{{today | date:"dd/MM/yyyy 'at' HH:mm"}}</span><br> -->
+			  <div class = "col3">{{item.recentMentioned | date:"dd/MM/yyyy 'at' HH:mm"}}</div>
+			  
+			  
+			  
+			  <div class = "col4">{{item.description}}</div>
+		
+		</div>
+	</div>
+	
+	<!-- ----------------END OF MAIN AREA-------------------------------- -->
+	
+	
+	<!-- ----------------DRAFT AREA-------------------------------- -->
+	
+	<h2>{{testDirective}} </h2>
+	
+	<div class = "medium white keywordsSection">
+	
+		<span ng-repeat = "item in data" class = "keywordBox level{{item.importanceLevel}}">
+			<span class = "keyword" >{{item.keyword}}</span>
+		
+		</span>
+		
+	</div>
+	
+	
+	
+	<div  class = "white semibold fSize16 lowerSection">
+	Keyword Density
+	</div>
+	
+	<div class = "keywordsDetailsContainer">
+	<div class = "keywordsDetails white bold fSize16">
+		<div class = "col1">Keyword</div> <div class = "col2">Counts</div>
+			  <div class = "col3">Most Recent mentioned</div>
+			  <div class = "col4">Description</div>
+		
+	
+	</div>
+		<div ng-repeat = "item in data" class = " littleBlue regular fSize13 keywordsDetails">
+		
+			<div class = "col1">{{item.keyword}}</div> <div class = "col2">{{item.counts}}</div>
+			 <!-- console.log($scope.utcDate.toLocaleTimeString([], {hour: 'numeric', minute:'numeric', hour12: false}));// -->
+			 <!--  <span>{{today | date:"dd/MM/yyyy 'at' HH:mm"}}</span><br> -->
+			  <div class = "col3">{{item.recentMentioned | date:"dd/MM/yyyy 'at' HH:mm"}}</div>
+			  
+			  
+			  
+			  <div class = "col4">{{item.description}}</div>
+		
+		</div>
+	</div>
+	
+	<!-- ----------------END OF DRAFT AREA-------------------------------- -->
+	
+	
+</div>

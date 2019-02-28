@@ -1,0 +1,48 @@
+<div class="target-waper">
+    <div class="target-hader">
+        <div class="tr-titel">
+            <span>TARGETS</span>
+            <img class="titel-img" src="images/targets-icon/ic_.target_less.png"></img>
+        </div>
+        <div class="controll-warper">
+            <div class="contorl-btn"  >
+                 <div class="case-select" dropdown auto-close="disabled" uib-dropdown on-toggle="toggled(open)">
+      <a href id="simple-dropdown" uib-dropdown-toggle>
+        select  case
+      </a>
+     <span class="glyphicon glyphicon-remove x-select"></span>
+      <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+        <li  ng-repeat="case in vm.caseObj">
+       <span ng-click="vm.addRomve(case.Id)">{{case.Name}}</span> 
+       <span ng-if="case.active" class="isActive"></span> 
+        </li>
+      </ul>
+    </div>
+    <div class="caseBtn">
+                <input type="image" class="btn_img" src="images/targets-icon/ic_cases.png" id="addCase" ng-click='vm.addCase()'>
+                <input type="image" class="btn_img" src="images/targets-icon/ic_addtarget.png" id="addtarget"  ng-click='vm.addv()'>
+                <input type="image" class="btn_img" src="images/targets-icon/ic_hideall.png" id="hideMarker">
+    </div>
+            </div>
+            <div class="serchbox">
+                <input class="serch-input" type="text" placeholder="Enter keyword">
+            </div>
+        </div>
+    </div>
+    <div  class="target-list">
+    <div  ng-repeat="targets in vm.caseObj" class="target-deitels">
+        <div  ng-repeat=" tr in targets.target">
+            <img class="target-img" ng-src="{{tr.imageUrl}}"></img>
+            <div class="target-text">
+            <span  class="tr-name">{{tr.name}}</span>
+            <div>
+            <img  src="images/targets-icon/ic_target_post.png"></img>
+            <span class="tr-last-text">{{tr.lastText}}</span>
+            <span  class="tr-last-text"> Today  at 21:00</span>
+            </div>
+            </div>
+              <input type="image" class="" src="images/targets-icon/ic_show.png" id="showtarge">
+              </div>
+        </div>
+    </div>
+</div>

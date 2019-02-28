@@ -1,0 +1,731 @@
+/*short hand :  font: font-style font-variant font-weight font-size/line-height font-family;*/
+/* master.css */
+/*
+@import url("reset.css");
+@import url("global.css");  
+@import url("flash.css");
+@import url("structure.css");
+*/
+.dashboardStyle{
+	
+	background-color: #20282F;
+	
+	/*defaul color of fonts*/
+	color: #ffffff;
+	/*defauls type of font*/
+	font-family:'Fira Sans' , sans-serif;
+	
+}
+
+dashboard.font1{
+	
+	
+}
+
+#documentation th ,  td{
+	
+	border:solid 2px; padding:5px;
+}
+/**General Css*/
+.hidden{
+	
+	display : none;
+	
+}
+
+.visible{
+	display: visible;
+	
+}
+
+/*font sizes*/
+
+.fSize12{
+	font-size: 12px;
+	
+}
+
+.fSize13{
+	font-size: 13px;
+	
+}
+.fSize14{
+	font-size: 14px;
+	
+}
+.fSize15{
+	font-size: 15px;
+	
+}
+.fSize16{
+	font-size: 16px;
+	
+}
+.fSize17{
+	font-size: 17px;
+	
+}
+.fSize18{
+	font-size: 18px;
+	
+}
+.fSize19{
+	font-size: 19px;
+	
+}
+
+/*font weights*/
+
+.bold{
+	
+	font-weight:bold;
+	
+}
+
+.semibold{
+	font-weight: 600;
+	
+}
+.medium{
+	font-weight: 500;
+	
+}
+
+.regular{
+	
+	font-weight: normal;
+	
+}
+
+/*font-color*/
+.white{
+	
+	color:#ffffff;
+	
+}
+
+.littleBlue{
+	
+	color:#b9cbdf; 
+	
+}
+
+/*font types*/
+.font1{
+	
+	font-size: 18px;
+	color: #ffffff;
+	
+	font-weight: bold;
+	
+}
+
+.font2{
+	
+	font-size: 14px;
+	color:#b9cbdf; 
+	font-weight: normal;
+	
+	
+	
+}
+
+.font3{
+	
+	
+	font-size: 16px;
+	color:#b9cbdf; 
+	font-weight: normal;
+	
+}
+
+.font4{
+	
+	
+	font-size: 16px;
+	color:#ffffff; 
+	font-weight: 600;
+	
+}
+
+.font5{
+	
+	font-size: 16px;
+	color:#ffffff; 
+	font-weight: 500;
+	
+}
+.font6{
+	
+	font-size: 16px;
+	color:#ffffff; 
+	font-weight: normal;
+	
+}
+.font7{
+	
+	
+	font-size: 14px;
+	color:#ffffff; 
+	font-weight: 600;
+	
+}
+
+
+
+/*backgrounds*/
+
+.background1{
+	
+	background-color: #191f25;
+	
+}
+
+
+/***Others general**/
+
+
+.line1{
+	
+	/*1pxstroke#334353*/
+	stroke-width : 1px;
+	stroke: #334353;
+	stroke-linecap:butt;
+	padding-left: 0px;
+	display: inline-block;
+	
+	
+	
+}
+.frame1{
+	
+	border: solid 1px #334353;
+	padding: 2px;
+	border-radius: 4px;
+	margin-right: 2px;
+	
+}
+
+
+
+/*Target Details Style**/
+.targetDetails{
+	padding-left: 20px;
+	
+}
+.targetDetails .onlyVlaEl{
+	display : none;	
+}
+.targetDetails  .upperSection{
+	
+	
+	
+	padding-top : 50px;
+	height: 185px;
+	
+}
+.targetDetails  .upperSection table{
+	
+	table-layout: fixed;
+  	width: 100%;
+	
+}
+.targetDetails  .upperSection td{
+	
+	border: none;
+	
+	
+	
+	vertical-align: top;
+	
+	
+}
+
+#targetDetailsImg{
+	
+	width: 130px;
+	height: 130px;
+	border-radius : 6px;
+	float: left;
+	margin-right: 20px;
+}
+.targetDetails  .middleSection{
+	height: 487px;
+	
+	
+}
+.targetDetails  .middleSection table{
+	
+	table-layout: fixed;
+  	width: 100%;
+	
+}
+.targetDetails  .middleSection td{
+	
+	border: none;
+	
+	
+	
+	vertical-align: top;
+	
+	
+}
+
+.targetDetails  .lowerSection{
+	
+	height: 260px;
+	
+}
+
+
+.targetDetails .note{
+	
+	border-radius: 3px;
+	margin: 60px 5px; 
+	
+}
+
+.targetDetails .button1{
+	border:none;
+	background-color: LimeGreen;
+	border-radius:  3px;
+	padding: 10px;
+	float: right;
+	margin-right: 25px;
+	
+}
+.targetDetails .line1{
+	
+	padding-left: -20px;
+	margin-left: -20px;
+}
+/* Posts page Style */
+
+.posts{
+	
+	
+	
+}
+
+.posts table{
+	
+	
+	
+	
+}
+.posts tr td{
+	border: none;
+	
+	
+}
+
+.posts th{
+	text-align: left;
+	vertical-align: center;
+	
+}
+.posts tr {
+	border-bottom: 1px solid #334353;
+	
+}
+.posts  tr, th , td{
+	
+	margin: 10px;
+	padding: 10px;
+}
+
+.posts tr{
+	
+	overflow: hidden;
+	
+	
+}
+
+.posts .hideText{
+	color:green;
+	height:10px;
+	white-space: nowrap;
+	
+}
+
+.posts .showText{
+	
+	white-space: normal;
+	
+}
+.cell1{
+	
+	max-height: 62px;
+	overflow: hidden;
+	position: relative;
+	
+	
+}
+.cell2{
+	
+	
+	overflow: visible;
+	
+	
+}
+
+.posts .dataBox{
+	
+	
+}
+
+
+
+
+
+#moreMessage1{
+	
+	
+	position: absolute;
+	background-color:#20282F;   /*#232C35;*/
+	top: 44px;
+	right: 5px;
+	z-index:5;
+	padding-right: 100px;
+	
+	
+}
+ #moreMessage1 img{
+ 	
+	
+	
+	z-index:5;
+ 
+ } 
+ 
+ 
+ 
+ .postRow:hover{
+ 
+	background-color: #232C35 !important;
+ }
+ 
+ .postRow{
+ 	z-index:10;
+ 
+ }
+.posts .imagesCell{
+	
+	overflow: hidden;
+	
+	max-height: 70px;
+	
+}
+
+/***********Keywords******************/
+
+.level1{
+	
+	font-size:56px;
+	
+}
+.level2{
+	
+	font-size:50px;
+}
+.level3{
+	
+	font-size: 41px;
+}
+.level4{
+	
+	font-size: 35px;
+}
+
+
+.level5{
+	
+	
+	font-size:28px;
+	
+}
+.level6{
+	
+	font-size: 21px;
+}
+.level7{
+	
+	font-size: 14px;
+}
+.keyword{
+	
+	padding: 25px 35px;
+	text-shadow: 7px 7px rgb(0,0,0,0.5);
+	 text-shadow: 0 0 20px rgb(255,255,255, 0.4);
+	
+	
+	
+}
+.keywordBox{
+	
+	
+	
+}
+
+.keywords .lowerSection{
+	
+	height:42px; 
+	background-color: #283440; 
+	padding:10px;
+	
+}
+.keywordsDetailsContainer{
+	width: 100%;
+	
+}
+.keywordsDetailsContainer{
+	
+	
+}
+
+.keywordsDetails{
+	height: 42px;
+	padding: 10px 0px 10px 30px;
+	
+}
+.keywordsDetails *{
+	
+	display: inline-block;
+	
+	
+}
+
+.keywordsDetails .col1{
+	
+	width: 14%;
+	
+}
+.keywordsDetails .col2{
+	
+	width: 13%;
+	
+}
+.keywordsDetails .col3{
+	
+	width: 20%;
+	
+}
+
+.keywordsDetails .col4{
+	
+	
+	
+}
+.keywordsDetails:nth-child(even) {background: #1f272f;}
+
+.keywordsDetails:nth-child(odd) {background: #222a33;}
+
+/****vla*******/
+.vla .white{
+	
+	fill: white;
+	
+}
+/** Setting for the details area */
+
+.vla .targetDetails{
+	background-color: #222a33;
+	
+	
+}
+.vla .targetDetails *{
+	
+	
+	background-color: #222a33;
+	width: 100%;
+}
+.vla .onlyMain{
+	display : none;
+	
+}
+.vla .onlyVlaEl{
+	
+	display: initial;
+}
+
+.vla .upperSection{
+	
+	height : 153px;
+	
+	
+}
+
+.vla #targetDetailsImg{
+	width: 100px;
+	height: 100px;
+	
+	
+}
+.vla .middleSection{
+	
+	height: 267px;
+	
+}
+.vla .middleSection .targetDetailsBlock {
+	display : none;
+}
+.vla .middleSection .vlaEl {
+	display : initial;
+}
+.vla .lowerSection{
+	display: none;
+	
+}
+.vla #title1{
+	
+	background-color: #283440;
+	height: 42px;
+	display: block;
+	padding: 10px 20px;
+	position: absolute;
+	left: 0px;
+	
+}
+
+/******Daft - trying************/
+
+
+.draftScreen{
+	
+	background-color: yellow;
+	
+	
+}
+.draftScreen .targetDetailsBlock {
+	
+	background-color: red;
+	
+	
+}
+.leftSideArea{
+	
+	width: 394px;
+	
+}
+
+.svgText{
+	
+	fill: white;
+	font-size: 10px;
+	
+}
+image {
+    clip-path: url(#circleView1);
+}
+
+
+/** .mainDashboard **/
+
+.mainDashboard{
+	background-color: #20282F;
+	
+}
+.mainDashboard .vla{
+	
+	
+	
+}
+.mainDashboard .vla .mainDashboardEl{
+	
+	display : none;
+	
+}
+#mainDashboardEl{
+	
+	
+	
+}
+.mainDashboard #vlaScheme  {
+	background-color: red;
+}
+.mainDashboard #vlaArea {
+	
+	border : solid #334354 1px;
+	 border-radius: 6px;
+	 margin: 20px;
+	 display:inline-block;
+	
+	
+}
+.mainDashboard #title1{
+	
+	background-color: #283440;
+	height: 42px;
+	display: block;
+	padding: 10px 20px;
+	
+	
+}
+.mainDashboard .postsList{
+	width: 260px;
+	border: solid #334354 1px;
+	border-radius: 6px;
+	
+}
+.mainDashboard .postBox{
+	
+	
+	
+	border: solid #334354 1px;
+	padding: 10px;
+	
+}
+.mainDashboard .postIcon{
+	
+	
+	 display: table-cell;
+	 
+}
+.mainDashboard .postText{
+	padding: 15px;
+	display: table-cell;
+}
+.mainDashboard .postBox:hover{
+ 
+	background-color: #232C35 !important;
+	
+ }
+ 
+ .mainDashboard .title2{
+	background-color: #283440;
+	height: 42px;
+	display: block;
+	padding: 10px 20px;
+ }
+ .mainDashboard .postsList input{
+ 	display : block;
+ 	background-color: inherit;
+ 	width: 100%;
+ 	height: 40px;
+ 	border: none;
+ 	padding: 10px;
+ }
+ 
+ .mainDashboard #postsArea{
+ 
+ 	display:inline-block;
+ 	float:right;
+ 	margin: 20px;
+ 	
+ }
+ 
+ /**for setting th screen */
+ .col-md-9 {
+    width: 1250px;
+    float: right;
+}
+
+.mainDashboard #keywordsArea {
+	
+	border : solid #334354 1px;
+	 border-radius: 6px;
+	 margin: 20px;
+	 width: 900px;
+	
+	
+}
